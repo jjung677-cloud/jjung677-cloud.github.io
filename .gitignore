@@ -1,6 +1,2 @@
-# Held back from the live site until the rebuild is ready.
-# These stay on local disk for editing/preview but are NOT deployed.
-# To relaunch: remove the relevant lines below, then `git add` + commit + push.
-/portfolio.html
-/blog.html
-/blog-*.html
+# Full site is live. Only ignore OS cruft.
+.DS_Store
