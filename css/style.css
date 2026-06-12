@@ -197,7 +197,7 @@ body.ko .case-title{max-width:none}
 .alist{border-top:1px solid var(--line)}
 .arow{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
 .arow .an{font-weight:600;font-size:16px;letter-spacing:-.01em}
-.arow .ad{color:var(--muted);font-size:15px;line-height:1.6;max-width:64ch}
+.arow .ad{color:var(--muted);font-size:15px;line-height:1.6}
 .anote{margin-top:24px;font-size:14px;color:var(--muted);max-width:58ch}
 .vph{width:100%}
 .vph>img,.vph>video{width:100%;border-radius:5px;border:1px solid var(--line)}
@@ -231,3 +231,28 @@ body.ko .case-title{max-width:none}
 .tldr-row b{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;font-weight:600}
 body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
 .about-cta{margin-top:6px}
+
+/* training gallery — aligned grid, Singtel hero */
+.vgal-t{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(2,minmax(200px,23vw));gap:12px}
+.vgal-t img{width:100%;height:100%;object-fit:cover;border-radius:5px;border:1px solid var(--line)}
+.vgal-t .t-main{grid-row:1/3}
+@media(max-width:880px){
+  .vgal-t{grid-template-columns:1fr 1fr;grid-template-rows:repeat(2,34vw)}
+}
+
+/* fixture lifecycle wheel */
+.cycle-row{display:grid;grid-template-columns:minmax(340px,420px) 1fr 1fr;gap:18px;align-items:start;margin-top:14px}
+.wheel{position:relative;height:420px}
+.wheel-ring{position:absolute;inset:13%;border:1.5px dashed var(--accent);border-radius:50%;opacity:.5}
+.wheel-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;width:48%;font-size:12.5px;color:var(--muted);line-height:1.5}
+.wheel-core b{display:block;font-size:26px;color:var(--accent);font-weight:500;margin-bottom:5px}
+.wheel .wn{position:absolute;transform:translate(-50%,-50%);display:inline-flex;align-items:baseline;gap:6px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--bg);white-space:nowrap;box-shadow:0 1px 2px rgba(22,21,18,.05)}
+.wheel .wn .n{font-size:10px;color:var(--accent);font-weight:600}
+.wheel .wn .t{font-size:12.5px;font-weight:600;letter-spacing:-.01em}
+.cycle-row .pframe img{height:420px;object-fit:cover}
+@media(max-width:1000px){
+  .cycle-row{grid-template-columns:1fr;justify-items:center}
+  .wheel{width:min(420px,92vw);height:min(420px,92vw)}
+  .cycle-row .pframe{width:100%}
+  .cycle-row .pframe img{height:auto;aspect-ratio:4/3}
+}
