@@ -62,7 +62,7 @@ a{color:inherit}img{display:block;max-width:100%}.wrap{max-width:var(--maxw);mar
 
 /* about sidebar blocks */
 .side-label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:11px}
-.side-text{font-size:14px;color:var(--muted)}
+.side-text{font-size:12.5px;color:var(--muted)}
 .side-list{list-style:none;display:grid;gap:13px}
 .side-list li{font-size:14px;color:var(--ink);line-height:1.35}
 .side-list li span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
@@ -256,7 +256,7 @@ body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
 }
 
 /* sidebar size unification + youtube thumb */
-.about-side .side-text, .about-side .side-text span{font-size:14px;line-height:1.5}
+.about-side .side-text, .about-side .side-text span{font-size:12.5px;line-height:1.5}
 .vc-thumb{display:block;margin-top:14px;width:210px}
 .vc-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:5px;border:1px solid var(--line)}
 .vc-thumb:hover img{opacity:.9}
