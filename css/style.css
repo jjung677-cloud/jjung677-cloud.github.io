@@ -273,3 +273,32 @@ body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
   .post-body .figrow{grid-template-columns:1fr;gap:24px}
   .post-body .figrow figure img{height:auto}
 }
+
+/* ===== subtle design polish ===== */
+::selection{background:var(--accent);color:#fff}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* current section gets a quiet accent underline in the nav */
+.nav-links a{position:relative}
+.nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--accent);border-radius:2px}
+
+/* section eyebrow numbers: a short accent tick for a more editorial feel */
+.sec-no,.block-no{position:relative;padding-left:26px}
+.sec-no::before,.block-no::before{content:"";position:absolute;left:0;top:.62em;width:18px;height:2px;background:var(--accent);border-radius:2px}
+
+/* blog index rows: warm hover */
+.artcard{transition:background-color .25s ease}
+.artcard:hover{background:rgba(168,81,46,.04)}
+.artcard:hover .ph img{border-color:var(--accent)}
+
+/* portfolio approach cards + skill tags: accent on hover */
+.appr{transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.appr:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 18px rgba(22,21,18,.06)}
+.tag{transition:border-color .2s ease,color .2s ease}
+.tag:hover{border-color:var(--accent);color:var(--ink)}
+
+/* portfolio photos lift gently on hover */
+.pframe img,.vgal img,.vgal-t img{transition:border-color .2s ease,box-shadow .25s ease}
+.pframe:hover img,.vgal img:hover,.vgal-t img:hover{box-shadow:0 8px 22px rgba(22,21,18,.08)}
+
+@media(prefers-reduced-motion:reduce){.appr:hover{transform:none}}
