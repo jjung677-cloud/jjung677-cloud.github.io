@@ -241,8 +241,8 @@ body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
 
 
 /* fixture lifecycle wheel */
-.cycle-row{display:grid;grid-template-columns:minmax(340px,420px) 1fr 1fr;gap:18px;align-items:start;margin-top:14px}
-.wheel{position:relative;height:420px}
+.cycle-row{display:grid;grid-template-columns:minmax(340px,420px) 1fr 1fr;gap:36px;align-items:start;margin-top:14px}
+.wheel{position:relative;height:420px;margin-right:14px}
 .wheel-ring{position:absolute;inset:13%;border:1.5px dashed var(--accent);border-radius:50%;opacity:.5}
 .wheel-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;width:48%;font-size:12.5px;color:var(--muted);line-height:1.5}
 .wheel-core b{display:block;font-size:26px;color:var(--accent);font-weight:500;margin-bottom:5px}
@@ -252,7 +252,7 @@ body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
 .cycle-row .pframe img{height:420px;object-fit:cover}
 @media(max-width:1000px){
   .cycle-row{grid-template-columns:1fr;justify-items:center}
-  .wheel{width:min(420px,92vw);height:min(420px,92vw)}
+  .wheel{width:min(420px,92vw);height:min(420px,92vw);margin-right:0}
   .cycle-row .pframe{width:100%}
   .cycle-row .pframe img{height:auto;aspect-ratio:4/3}
 }
