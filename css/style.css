@@ -231,7 +231,7 @@ body.ko .case-title{max-width:none}
 .tldr-row{font-size:15px;line-height:1.65}
 .tldr-row b{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;font-weight:600}
 body.ko .tldr-row b{letter-spacing:.04em;text-transform:none}
-.about-cta{margin-top:6px;text-align:left}
+.prose .about-cta{margin-top:6px;text-align:left}
 
 /* training gallery — aligned grid, Singtel hero */
 .vgal-t{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:3/2.05}
